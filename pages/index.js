@@ -1,9 +1,12 @@
-import Header from "../components/Header";
+import Header from "../components/header/Header";
+import Carousel from "../components/carousel/Carousel";
 
 export default function Home() {
 	return (
 		<>
-			<Header />
+			<Header>
+				<Carousel />
+			</Header>
 		</>
 	);
 }

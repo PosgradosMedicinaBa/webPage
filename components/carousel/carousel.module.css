@@ -1,0 +1,99 @@
+.mainContainer {
+	width: 100vw;
+	position: relative;
+}
+.carousel {
+	width: fit-content;
+	display: flex;
+	transition: transform 1s ease;
+}
+.banner {
+	width: 100vw;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+.bannerBlue {
+	flex-direction: row-reverse;
+	background-color: #5ac0f9;
+}
+.img {
+	width: 55%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.gradient {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+.blueGradient {
+	background: linear-gradient(90deg, #5ac0f9 50%, rgba(77, 178, 235, 0) 72.57%);
+}
+.mainContainer p {
+	z-index: 0;
+	color: var(--bk-color);
+	font-size: 3vw;
+	font-weight: 300;
+	width: 50%;
+}
+.bannerBlue p {
+	padding-left: 45px;
+}
+
+.bannerGreen {
+	background-color: #7bd69e;
+}
+
+.greenGradient {
+	background: linear-gradient(90deg, rgba(123, 214, 158, 0) 35%, #7bd69e 45%);
+}
+.bannerGreen p {
+	width: 50%;
+	padding-right: 45px;
+}
+
+.bannerPink {
+	flex-direction: row-reverse;
+	background-color: #e0bafe;
+}
+
+.pinkGradient {
+	background: linear-gradient(90deg, #e0bafe 51.91%, rgba(224, 185, 254, 0) 76.94%);
+}
+.bannerPink p {
+	padding-left: 45px;
+}
+.show-0 {
+	transform: translateX(0vw);
+}
+.show-1 {
+	transform: translateX(-100vw);
+}
+.show-2 {
+	transform: translateX(-200vw);
+}
+
+.btn {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100px;
+	position: absolute;
+	bottom: 20px;
+	left: calc(100% / 2 - 50px);
+}
+.btn button {
+	background-color: var(--blue-text);
+	border: none;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+.btnSelect {
+	background-color: var(--bk-color) !important;
+}
