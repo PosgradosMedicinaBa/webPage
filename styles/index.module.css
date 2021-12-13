@@ -1,0 +1,64 @@
+.quienesQueSection {
+	padding: 10vh 10vw;
+}
+.quienesQueMainContainer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 80px;
+}
+.card {
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	padding: 2.5em;
+	width: 55%;
+	max-width: 650px;
+	position: relative;
+}
+.card p {
+	color: var(--gray-text);
+	font-weight: 300;
+	margin: 5px 0px;
+}
+.img {
+	/* width: 35%; */
+	width: 60vh;
+	max-width: 43%;
+}
+
+.card h1 {
+	color: var(--blue-text);
+	font-weight: 900;
+	font-size: 2rem;
+	margin: 0px;
+}
+.card a {
+	background-color: var(--blue-text);
+	color: var(--bk-color);
+	font-weight: 900;
+	padding: 15px 30px;
+	border-radius: 20px;
+	position: absolute;
+	bottom: -25px;
+	right: 30px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+	transition: transform 0.5s, box-shadow 0.5s;
+}
+.card a:hover {
+	transform: scale(1.05);
+	box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 950px) {
+	.img {
+		display: none;
+	}
+	.quienesQueMainContainer {
+		justify-content: center;
+	}
+	.card {
+		width: 100%;
+		max-width: 650px;
+	}
+}

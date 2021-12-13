@@ -65,7 +65,7 @@
 	background: linear-gradient(90deg, #e0bafe 51.91%, rgba(224, 185, 254, 0) 76.94%);
 }
 .bannerPink p {
-	padding-left: 45px;
+	padding-left: 50px;
 }
 .show-0 {
 	transform: translateX(0vw);
@@ -96,4 +96,48 @@
 }
 .btnSelect {
 	background-color: var(--bk-color) !important;
+}
+
+@media (orientation: portrait) {
+	.mainContainer p {
+		margin: 0px;
+		padding: 6%;
+		font-size: 4.5vh;
+		width: 100%;
+		align-self: center;
+	}
+	.banner {
+		/* height: 80vh; */
+		overflow: hidden;
+		justify-content: space-between;
+	}
+	.img {
+		--ih: 50vh;
+		height: var(--ih);
+		width: calc(1920 * var(--ih) / 1281);
+	}
+	.bannerBlue {
+		flex-direction: column-reverse;
+	}
+	.blueGradient {
+		background: linear-gradient(180deg, #5ac0f9 40%, rgba(77, 178, 235, 0) 50%);
+	}
+
+	.bannerGreen,
+	.bannerPink {
+		flex-direction: column;
+	}
+	.bannerPink p {
+		transform: translateY(-7vh);
+	}
+	.bannerGreen p {
+		transform: translateY(-5vh);
+	}
+
+	.greenGradient {
+		background: linear-gradient(180deg, rgba(123, 214, 158, 0) 35%, #7bd69e 55%);
+	}
+	.pinkGradient {
+		background: linear-gradient(0deg, #e0bafe 40%, rgba(224, 185, 254, 0) 76.94%);
+	}
 }
