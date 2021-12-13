@@ -1,6 +1,7 @@
 .mainContainer {
 	width: 100vw;
 	position: relative;
+	padding-top: 73px;
 }
 .carousel {
 	width: fit-content;

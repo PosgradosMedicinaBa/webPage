@@ -3,7 +3,10 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: 10px 30px 10px 25px;
-	position: relative;
+	position: fixed;
+	z-index: 10;
+	background-color: var(--bk-color);
+	width: 100vw;
 }
 .bar button {
 	display: none;
