@@ -1,5 +1,7 @@
 import Header from "../components/header/Header";
 import Carousel from "../components/carousel/Carousel";
+import Footer from "../components/footer/Footer";
+import WhatsappLink from "../components/whatsappIcon/WhatsappLink";
 import styles from "../styles/index.module.css";
 import Link from "next/link";
 import Image from "next/image";
@@ -92,6 +94,8 @@ export default function Home() {
 					</div>
 				</section>
 			</main>
+			<Footer />
+			<WhatsappLink />
 		</>
 	);
 }
