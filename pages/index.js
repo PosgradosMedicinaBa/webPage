@@ -5,6 +5,8 @@ import Link from "next/link";
 import Image from "next/image";
 import quienesSomosImg from "../public/img/quienesSomosHome.png";
 import queHacemosImg from "../public/img/queHacemosHome.png";
+import servcios from "../public/svg/nuestrosServicios.svg";
+import bannerImg from "../public/img/banner.png";
 
 export default function Home() {
 	return (
@@ -14,7 +16,7 @@ export default function Home() {
 			</Header>
 			<main>
 				<section className={styles.quienesQueSection}>
-					<div className={styles.quienesQueMainContainer}>
+					<article className={styles.quienesQueMainContainer}>
 						<div className={styles.card}>
 							<h1>Quiénes Somos</h1>
 							<p>
@@ -22,14 +24,14 @@ export default function Home() {
 								quieren estudiar su carrera de posgrado en medicina en Buenos Aires.
 							</p>
 							<Link href="#">
-								<a>¡Conócenos!</a>
+								<a className={styles.link}>¡Conócenos!</a>
 							</Link>
 						</div>
 						<div className={styles.img}>
 							<Image src={quienesSomosImg} alt="Foto Buenos Aires" />
 						</div>
-					</div>
-					<div className={styles.quienesQueMainContainer}>
+					</article>
+					<article className={styles.quienesQueMainContainer}>
 						<div className={styles.img}>
 							<Image src={queHacemosImg} alt="Foto Buenos Aires" />
 						</div>
@@ -41,8 +43,51 @@ export default function Home() {
 								oportunidades laborales para que tu estadía sea sustentable.
 							</p>
 							<Link href="#">
-								<a>Más Información</a>
+								<a className={styles.link}>Más Información</a>
 							</Link>
+						</div>
+					</article>
+				</section>
+				<section className={styles.servciosSection}>
+					<div className={styles.servcios}>
+						<div>
+							<Image src={servcios} alt="Nuestros Servicios" />
+						</div>
+						<p className={styles.inscripcion}>
+							<b>Inscripción</b> en <b>Universidades</b> Nacionales públicas y privadas.
+						</p>
+						<p className={styles.asesoramiento}>
+							<b>Asesoramiento</b> personalizado de carrera.
+						</p>
+						<p className={styles.acompañamiento}>
+							<b>Acompañamiento</b> en el proceso formativo.
+						</p>
+						<p className={styles.vivir}>
+							Recomendación de los <b>mejores</b> lugares para <b>vivir</b>.
+						</p>
+						<p className={styles.trabajo}>
+							Ubicación <b>laboral</b> durante tu estadía.
+						</p>
+					</div>
+					<div className={styles.btnContainer}>
+						<Link href="#">
+							<a className={styles.link}>Más Información</a>
+						</Link>
+					</div>
+				</section>
+				<section>
+					<div className={styles.banner}>
+						<p>
+							¡Si estas buscando la mejor experiencia para <b>estudiar</b> en{" "}
+							<b>Buenos Aires</b>, no lo dudes,{" "}
+							<Link href="#">
+								<a>contactate</a>
+							</Link>{" "}
+							con nosotros!
+						</p>
+						<div className={styles.bannerImg}>
+							<Image src={bannerImg} alt="Estudiantes" />
+							<div className={styles.bannerGradient} />
 						</div>
 					</div>
 				</section>
