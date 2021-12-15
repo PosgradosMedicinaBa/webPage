@@ -9,7 +9,7 @@ import styles from "../styles/quienessomos.module.css";
 export default function Quienessomos() {
 	return (
 		<>
-			<Header />
+			<Header section="quienes-somos" />
 			<main className={styles.mainContainer}>
 				<article>
 					<h1>

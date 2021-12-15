@@ -7,7 +7,7 @@ import styles from "../styles/requisitos-y-documentacion.module.css";
 export default function Requisito_y_Documentacion() {
 	return (
 		<>
-			<Header />
+			<Header section="requisitos-y-documentacion" />
 			<main className={styles.mainContainer}>
 				<div className={styles.intro}>
 					<h1>
@@ -50,6 +50,7 @@ export default function Requisito_y_Documentacion() {
 				</div>
 			</main>
 			<Footer />
+			<WhatsappLink />
 		</>
 	);
 }

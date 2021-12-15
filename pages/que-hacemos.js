@@ -13,7 +13,7 @@ import Link from "next/link";
 export default function Quechaemos() {
 	return (
 		<>
-			<Header />
+			<Header section="que-hacemos" />
 			<main className={styles.main}>
 				<div className={styles.intro}>
 					<h1>

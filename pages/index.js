@@ -13,7 +13,7 @@ import bannerImg from "../public/img/banner.png";
 export default function Home() {
 	return (
 		<>
-			<Header>
+			<Header section="inicio">
 				<Carousel />
 			</Header>
 			<main>

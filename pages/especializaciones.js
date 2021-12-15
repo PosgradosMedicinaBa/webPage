@@ -35,7 +35,7 @@ export default function Especializaciones() {
 
 	return (
 		<>
-			<Header />
+			<Header section="especializaciones" />
 			<main className={styles.mainContainer}>
 				<div className={styles.intro}>
 					<h1>Especializaciones</h1>
