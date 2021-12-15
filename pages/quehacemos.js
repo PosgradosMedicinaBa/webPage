@@ -1,5 +1,6 @@
 import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
+import WhatsappLink from "../components/whatsappIcon/WhatsappLink";
 import styles from "../styles/quehacemos.module.css";
 import Image from "next/image";
 import inscripcionIcon from "../public/svg/queHacemosIcons/inscripcion.svg";
@@ -130,6 +131,7 @@ export default function quechaemos() {
 				</p>
 			</main>
 			<Footer />
+			<WhatsappLink />
 		</>
 	);
 }

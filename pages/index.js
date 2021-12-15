@@ -26,7 +26,7 @@ export default function Home() {
 								quieren estudiar su carrera de posgrado en medicina en Buenos Aires.
 							</p>
 							<Link href="#">
-								<a className={styles.link}>¡Conócenos!</a>
+								<a className="link">¡Conócenos!</a>
 							</Link>
 						</div>
 						<div className={styles.img}>
@@ -45,7 +45,7 @@ export default function Home() {
 								oportunidades laborales para que tu estadía sea sustentable.
 							</p>
 							<Link href="#">
-								<a className={styles.link}>Más Información</a>
+								<a className="link">Más Información</a>
 							</Link>
 						</div>
 					</article>
@@ -73,7 +73,7 @@ export default function Home() {
 					</div>
 					<div className={styles.btnContainer}>
 						<Link href="#">
-							<a className={styles.link}>Más Información</a>
+							<a className="link">Más Información</a>
 						</Link>
 					</div>
 				</section>
