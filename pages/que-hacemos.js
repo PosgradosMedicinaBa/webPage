@@ -10,7 +10,7 @@ import acompañamientoIcon from "../public/svg/queHacemosIcons/acompañamiento.s
 import estadiaIcon from "../public/svg/queHacemosIcons/casa.svg";
 import Link from "next/link";
 
-export default function quechaemos() {
+export default function Quechaemos() {
 	return (
 		<>
 			<Header />

@@ -6,7 +6,7 @@ import WhatsappLink from "../components/whatsappIcon/WhatsappLink";
 import quienesSomosImage from "../public/img/quienesSomos.png";
 import styles from "../styles/quienessomos.module.css";
 
-export default function quienessomos() {
+export default function Quienessomos() {
 	return (
 		<>
 			<Header />

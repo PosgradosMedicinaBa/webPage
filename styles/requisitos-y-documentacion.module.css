@@ -1,0 +1,72 @@
+.mainContainer {
+	padding-top: 80px;
+	color: var(--gray-text);
+	height: 100%;
+}
+.intro {
+	width: 35%;
+	min-width: 250px;
+	margin-left: 60px;
+}
+.intro h1 {
+	margin-bottom: 0px;
+	color: var(--blue-text);
+	font-weight: 300;
+	font-size: clamp(2rem, 5vw, 3rem);
+}
+.intro p {
+	font-weight: bold;
+}
+.card {
+	background-color: white;
+	width: 80%;
+	border-radius: 30px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	padding: 30px;
+	margin: 60px;
+	margin-bottom: 31vh;
+	position: relative;
+}
+.card h2 {
+	color: var(--blue-text);
+	font-size: clamp(1.2rem, 5vw, 1.5rem);
+}
+.govLink {
+	display: inline-block;
+	max-width: 100%;
+	font-weight: bold;
+	text-decoration: underline;
+	margin-bottom: 50px;
+	word-wrap: break-word;
+}
+.card p {
+	margin: 20px 0px;
+}
+.accion {
+	position: absolute;
+	bottom: -20px;
+	right: 20px;
+}
+
+@media (max-width: 600px) {
+	.card {
+		width: 90%;
+		margin: 60px auto;
+		margin-bottom: 100px;
+	}
+	.accion {
+		position: absolute;
+		bottom: -20px;
+		right: calc(50% - 100px);
+	}
+}
+@media (max-width: 350px) {
+	.intro {
+		margin-left: 40px;
+	}
+}
+@media (max-width: 300px) {
+	.intro {
+		margin-left: 20px;
+	}
+}
