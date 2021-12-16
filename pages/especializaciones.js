@@ -22,6 +22,7 @@ export default function Especializaciones() {
 	const [inputValue, setInputValue] = useState("");
 	const [list, setList] = useState(especializacionesList);
 
+	//cambiar buscar por palabra con bucle
 	function inputChange(value) {
 		if (value) {
 			const regExp = new RegExp(prepareString(value));

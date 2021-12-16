@@ -1,0 +1,113 @@
+.mainContainer {
+	padding-top: 80px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 80px;
+	/* margin-bottom: 100%; */
+}
+.principal {
+	width: 50%;
+	padding: 0px 5%;
+}
+
+.intro h1 {
+	margin: 0px;
+	color: var(--blue-text);
+	font-size: clamp(2rem, 5vw, 3rem);
+}
+.intro a {
+	text-decoration: underline;
+}
+.imgContainer {
+	width: 50%;
+	overflow: hidden;
+}
+.img {
+	width: 800px;
+}
+
+.principal form {
+	margin-top: 60px;
+}
+
+.input {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 15px;
+}
+.input input {
+	border: solid var(--blue-text) 2px;
+	height: 25px;
+}
+.input label {
+	color: var(--blue-text);
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.nombre {
+	display: flex;
+	justify-content: space-between;
+}
+.nombre > .input {
+	width: 48%;
+}
+.nacionalidad {
+	width: 80%;
+}
+.input textarea {
+	resize: none;
+	height: 200px;
+	border: solid var(--blue-text) 2px;
+}
+.requeridos {
+	color: var(--gray-text);
+	font-weight: 300;
+	font-size: 0.8rem;
+	text-align: right;
+}
+.principal button {
+	background-color: var(--blue-text);
+	color: var(--bk-color);
+	font-weight: bold;
+	border: none;
+	padding: 10px 30px;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: transform 0.5s;
+}
+.principal button:hover {
+	transform: scale(1.1);
+}
+
+@media (max-width: 950px) {
+	.mainContainer {
+		justify-content: center;
+	}
+	.imgContainer {
+		display: none;
+	}
+	.principal {
+		/* border: solid; */
+		min-width: 80vw;
+	}
+}
+@media (max-width: 600px) {
+	.nombre {
+		flex-direction: column;
+	}
+	.nombre > .input {
+		width: 80%;
+	}
+	.nacionalidad {
+		width: 100%;
+	}
+	.principal button {
+		margin: 0px calc(50% - 50px);
+	}
+}
+
+@media (min-height: 1120px) {
+	.mainContainer {
+		height: 80vh;
+	}
+}
