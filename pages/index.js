@@ -25,7 +25,7 @@ export default function Home() {
 								Somos una agencia que acompaña a profesionales de toda Latinoamérica que
 								quieren estudiar su carrera de posgrado en medicina en Buenos Aires.
 							</p>
-							<Link href="#">
+							<Link href="/quienes-somos">
 								<a className="link">¡Conócenos!</a>
 							</Link>
 						</div>
@@ -44,7 +44,7 @@ export default function Home() {
 								oportunidades académicas para tu perfil. También te ofrecemos
 								oportunidades laborales para que tu estadía sea sustentable.
 							</p>
-							<Link href="#">
+							<Link href="/que-hacemos">
 								<a className="link">Más Información</a>
 							</Link>
 						</div>
@@ -72,7 +72,7 @@ export default function Home() {
 						</p>
 					</div>
 					<div className={styles.btnContainer}>
-						<Link href="#">
+						<Link href="/que-hacemos">
 							<a className="link">Más Información</a>
 						</Link>
 					</div>
@@ -82,7 +82,7 @@ export default function Home() {
 						<p>
 							¡Si estas buscando la mejor experiencia para <b>estudiar</b> en{" "}
 							<b>Buenos Aires</b>, no lo dudes,{" "}
-							<Link href="#">
+							<Link href="/contacto">
 								<a>contactate</a>
 							</Link>{" "}
 							con nosotros!
