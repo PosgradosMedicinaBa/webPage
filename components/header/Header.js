@@ -13,6 +13,29 @@ export default function Header({children, section}) {
 		<>
 			<Head>
 				<title>Posgrados Medicina Buenos Aires</title>
+				<meta
+					name="description"
+					content="Agencia de asesoría a profesionales de toda Latinoamérica que quieren estudiar su carrera de posgrado en medicina en Buenos Aires."
+				/>
+				<meta property="og:type" content="website" />
+				<meta property="og:title" content="Posgrados Medicina Buenos Aires" />
+				<meta
+					property="og:description"
+					content="Agencia de asesoría a profesionales de toda Latinoamérica que quieren estudiar su carrera de posgrado en medicina en Buenos Aires."
+				/>
+				<meta property="og:image" content="https://i.ibb.co/TcCNPTN/ogImage.jpg" />
+				<meta property="og:image:alt" content="Posgrados Medicina Buenos Aires" />
+				<meta property="og:url" content="cambiar" />
+
+				<meta name="twitter:card" content="summary_large_image" />
+				<meta property="twitter:domain" content="weak-dodo-64.loca.lt" />
+				<meta property="twitter:url" content="cambiar" />
+				<meta name="twitter:title" content="Posgrados Medicina Buenos Aires" />
+				<meta
+					name="twitter:description"
+					content="Agencia de asesoría a profesionales de toda Latinoamérica que quieren estudiar su carrera de posgrado en medicina en Buenos Aires."
+				/>
+				<meta name="twitter:image" content="https://i.ibb.co/TcCNPTN/ogImage.jpg" />
 			</Head>
 			<header className={styles.header}>
 				<div className={styles.bar}>
