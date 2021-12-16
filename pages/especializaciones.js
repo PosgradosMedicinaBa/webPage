@@ -84,7 +84,7 @@ export default function Especializaciones() {
 					</div>
 				</div>
 			</main>
-			<Footer />
+			<Footer selected="especializaciones" />
 			<WhatsAppLink />
 		</>
 	);

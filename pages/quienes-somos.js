@@ -66,7 +66,7 @@ export default function Quienessomos() {
 					</div>
 				</div>
 			</main>
-			<Footer />
+			<Footer selected="quienes-somos" />
 			<WhatsappLink />
 		</>
 	);

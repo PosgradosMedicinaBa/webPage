@@ -49,7 +49,7 @@ export default function Requisito_y_Documentacion() {
 					</Link>
 				</div>
 			</main>
-			<Footer />
+			<Footer selected="requisitos-y-documentacion" />
 			<WhatsappLink />
 		</>
 	);

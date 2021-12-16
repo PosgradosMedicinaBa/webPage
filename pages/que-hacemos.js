@@ -130,7 +130,7 @@ export default function Quechaemos() {
 					con nosotros!
 				</p>
 			</main>
-			<Footer />
+			<Footer selected="que-hacemos" />
 			<WhatsappLink />
 		</>
 	);

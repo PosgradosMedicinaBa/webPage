@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
+import WhatsAppLink from "../components/whatsappIcon/WhatsappLink";
 import contactImg from "../public/img/contactImg.png";
 import styles from "../styles/contacto.module.css";
 
@@ -69,7 +70,8 @@ export default function Contacto() {
 					</div>
 				</div>
 			</main>
-			<Footer />
+			<Footer selected={"contacto"} />
+			<WhatsAppLink />
 		</>
 	);
 }
