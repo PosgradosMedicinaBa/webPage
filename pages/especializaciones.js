@@ -22,15 +22,27 @@ export default function Especializaciones() {
 	const [inputValue, setInputValue] = useState("");
 	const [list, setList] = useState(especializacionesList);
 
-	//cambiar buscar por palabra con bucle
 	function inputChange(value) {
+		//search
 		if (value) {
-			const regExp = new RegExp(prepareString(value));
-			const arr = especializacionesList.filter((ele) => regExp.test(prepareString(ele)));
+			const valArr = value.split(" ");
+
+			const arr = especializacionesList.filter((ele) => {
+				for (let i = 0; i < valArr.length; i++) {
+					if (valArr[i] !== " ") {
+						const regExp = new RegExp(prepareString(valArr[i]));
+						if (!regExp.test(prepareString(ele))) {
+							return false;
+						}
+					}
+				}
+				return true;
+			});
 			setList(arr);
 		} else {
 			setList(especializacionesList);
 		}
+		//update input
 		setInputValue(value);
 	}
 
