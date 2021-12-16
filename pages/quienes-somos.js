@@ -50,7 +50,7 @@ export default function Quienessomos() {
 						<div className={styles.gradient} />
 						<p>
 							¡Cualquier información o ayuda que necesites no dudes en{" "}
-							<Link href="#">
+							<Link href="/contacto">
 								<a>contactarte</a>
 							</Link>{" "}
 							con nosotros! <b>¡Nuestra misión en ayudarte!</b>

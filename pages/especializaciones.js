@@ -78,7 +78,7 @@ export default function Especializaciones() {
 						</ul>
 					</div>
 					<div className={styles.btnContainer}>
-						<Link href="#">
+						<Link href="/contacto">
 							<a className="link">¡Quiero Saber mas!</a>
 						</Link>
 					</div>

@@ -44,7 +44,7 @@ export default function Requisito_y_Documentacion() {
 							en el proceso. ¡Estamos a su disposición!{" "}
 						</b>
 					</p>
-					<Link href="#">
+					<Link href="/contacto">
 						<a className={"link" + " " + styles.accion}>¡Quiero asesorarme!</a>
 					</Link>
 				</div>

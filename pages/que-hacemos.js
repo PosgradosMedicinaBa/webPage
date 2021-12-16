@@ -124,7 +124,7 @@ export default function Quechaemos() {
 				<p className={styles.accion}>
 					¡Si estas buscando la mejor experiencia para estudiar en Buenos Aires, no lo
 					dudes,{" "}
-					<Link href="#">
+					<Link href="/contacto">
 						<a>contactate</a>
 					</Link>{" "}
 					con nosotros!
