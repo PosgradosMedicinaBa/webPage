@@ -1,4 +1,5 @@
 import Image from "next/image";
+import {useEffect, useState} from "react";
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
 import WhatsAppLink from "../components/whatsappIcon/WhatsappLink";
@@ -6,6 +7,13 @@ import contactImg from "../public/img/contactImg.png";
 import styles from "../styles/contacto.module.css";
 
 export default function Contacto() {
+	const [url, setUrl] = useState("");
+	useEffect(() => {
+		setUrl(
+			window.location.protocol + "//" + window.location.host + window.location.pathname
+		);
+	}, []);
+
 	return (
 		<>
 			<Header section="contacto" />
@@ -22,44 +30,44 @@ export default function Contacto() {
 						</p>
 					</div>
 					<form
-						action="mailto:nicolasdeheza@hotmail.com"
+						action="https://formsubmit.co/d82d671d890532347573f0bda4d08b73"
 						method="POST"
-						encType="text/plain"
 						name="EmailForm"
 					>
 						<div className={styles.nombre}>
 							<div className={styles.input}>
 								<label htmlFor="nombre">Nombre*</label>
-								<input type="text" id="nombre" name="nombre" />
+								<input type="text" id="nombre" name="nombre" required />
 							</div>
 
 							<div className={styles.input}>
 								<label htmlFor="apellido">Apellido*</label>
-								<input type="text" id="apellido" name="apellido" />
+								<input type="text" id="apellido" name="apellido" required />
 							</div>
 						</div>
 
 						<div className={styles.input}>
 							<label htmlFor="email">Email*</label>
-							<input type="email" id="email" name="email" />
+							<input type="email" id="email" name="email" required />
 						</div>
 
 						<div className={styles.input + " " + styles.nacionalidad}>
 							<label htmlFor="nacionalidad">Nacionalidad*</label>
-							<input type="text" id="nacionalidad" name="nacionalidad" />
+							<input type="text" id="nacionalidad" name="nacionalidad" required />
 						</div>
 
 						<div className={styles.input}>
 							<label htmlFor="especializacion">
 								Especialización en la que está interesado*
 							</label>
-							<input type="text" id="especializacion" name="especializacion" />
+							<input type="text" id="especializacion" name="especializacion" required />
 						</div>
 
 						<div className={styles.input}>
 							<label htmlFor="mensaje">Mensaje</label>
 							<textarea id="mensaje" name="mensaje" />
 						</div>
+						<input type="hidden" name="_next" value={url}></input>
 						<p className={styles.requeridos}>*campos requeridos</p>
 						<button type="submit">Enviar</button>
 					</form>
