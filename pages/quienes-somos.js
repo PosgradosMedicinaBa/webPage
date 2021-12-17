@@ -8,7 +8,7 @@ import styles from "../styles/quienessomos.module.css";
 
 export default function Quienessomos() {
 	return (
-		<>
+		<div className="app-container">
 			<Header section="quienes-somos" />
 			<main className={styles.mainContainer}>
 				<article>
@@ -68,6 +68,6 @@ export default function Quienessomos() {
 			</main>
 			<Footer selected="quienes-somos" />
 			<WhatsappLink />
-		</>
+		</div>
 	);
 }

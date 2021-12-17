@@ -15,7 +15,7 @@ export default function Contacto() {
 	}, []);
 
 	return (
-		<>
+		<div className="app-container">
 			<Header section="contacto" />
 			<main className={styles.mainContainer}>
 				<div className={styles.principal}>
@@ -80,6 +80,6 @@ export default function Contacto() {
 			</main>
 			<Footer selected={"contacto"} />
 			<WhatsAppLink />
-		</>
+		</div>
 	);
 }

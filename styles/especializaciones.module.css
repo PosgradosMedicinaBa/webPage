@@ -1,5 +1,9 @@
 .mainContainer {
+	margin: auto;
 	padding-top: 80px;
+	padding-bottom: 80px;
+	margin-bottom: 200px;
+	max-width: 2000px;
 }
 .intro {
 	width: 35%;
@@ -85,6 +89,9 @@
 	}
 	.list ul {
 		padding-left: 10px;
+	}
+	.mainContainer {
+		padding-bottom: 150px;
 	}
 }
 

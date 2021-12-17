@@ -1,5 +1,11 @@
+.main {
+	padding-bottom: 5vw;
+}
+
 .quienesQueSection {
 	padding: 10vh 10vw;
+	max-width: 2000px;
+	margin: auto;
 }
 .quienesQueMainContainer {
 	display: flex;
@@ -377,6 +383,7 @@
 	overflow: hidden;
 	margin-top: 100px;
 	margin-bottom: 80px;
+	max-width: 2000px;
 }
 
 .bannerImg {
@@ -438,5 +445,10 @@
 		color: #fcc687;
 		text-decoration: underline;
 		font-weight: 900;
+	}
+}
+@media (max-width: 800px) {
+	.banner {
+		margin-bottom: 140px;
 	}
 }

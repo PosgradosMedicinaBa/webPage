@@ -12,11 +12,11 @@ import bannerImg from "../public/img/banner.png";
 
 export default function Home() {
 	return (
-		<>
+		<div className="app-container">
 			<Header section="inicio">
 				<Carousel />
 			</Header>
-			<main>
+			<main className={styles.main}>
 				<section className={styles.quienesQueSection}>
 					<article className={styles.quienesQueMainContainer}>
 						<div className={styles.card}>
@@ -96,6 +96,6 @@ export default function Home() {
 			</main>
 			<Footer selected="inicio" />
 			<WhatsappLink />
-		</>
+		</div>
 	);
 }

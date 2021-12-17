@@ -1,7 +1,11 @@
 .mainContainer {
+	margin: auto;
 	padding-top: 80px;
+	margin-bottom: 200px;
+	padding-bottom: 80px;
 	color: var(--gray-text);
 	height: 100%;
+	max-width: 2000px;
 }
 .intro {
 	width: 35%;
@@ -24,7 +28,6 @@
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	padding: 30px;
 	margin: 60px;
-	margin-bottom: 31vh;
 	position: relative;
 }
 .card h2 {
@@ -46,6 +49,11 @@
 	position: absolute;
 	bottom: -20px;
 	right: 20px;
+}
+@media (max-width: 800px) {
+	.mainContainer {
+		padding-bottom: 120px;
+	}
 }
 
 @media (max-width: 600px) {

@@ -1,5 +1,9 @@
 .main {
+	margin: auto;
 	padding-top: 80px;
+	max-width: 2000px;
+	padding-bottom: 80px;
+	margin-bottom: 200px;
 }
 .intro {
 	width: 35%;
@@ -29,6 +33,7 @@
 	min-height: 200px;
 	margin: 50px auto;
 	overflow: hidden;
+	max-width: 1500px;
 }
 .cardTex {
 	padding: 30px;
@@ -96,6 +101,11 @@
 	}
 	.icon {
 		width: 50%;
+	}
+}
+@media (max-width: 800px) {
+	.main {
+		padding-bottom: 150px;
 	}
 }
 @media (max-width: 450px) {

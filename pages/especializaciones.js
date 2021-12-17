@@ -47,7 +47,7 @@ export default function Especializaciones() {
 	}
 
 	return (
-		<>
+		<div className="app-container">
 			<Header section="especializaciones" />
 			<main className={styles.mainContainer}>
 				<div className={styles.intro}>
@@ -86,6 +86,6 @@ export default function Especializaciones() {
 			</main>
 			<Footer selected="especializaciones" />
 			<WhatsAppLink />
-		</>
+		</div>
 	);
 }

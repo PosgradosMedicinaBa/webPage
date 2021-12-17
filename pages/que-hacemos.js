@@ -12,7 +12,7 @@ import Link from "next/link";
 
 export default function Quechaemos() {
 	return (
-		<>
+		<div className="app-container">
 			<Header section="que-hacemos" />
 			<main className={styles.main}>
 				<div className={styles.intro}>
@@ -132,6 +132,6 @@ export default function Quechaemos() {
 			</main>
 			<Footer selected="que-hacemos" />
 			<WhatsappLink />
-		</>
+		</div>
 	);
 }

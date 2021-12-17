@@ -6,7 +6,7 @@ import styles from "../styles/requisitos-y-documentacion.module.css";
 
 export default function Requisito_y_Documentacion() {
 	return (
-		<>
+		<div className="app-container">
 			<Header section="requisitos-y-documentacion" />
 			<main className={styles.mainContainer}>
 				<div className={styles.intro}>
@@ -51,6 +51,6 @@ export default function Requisito_y_Documentacion() {
 			</main>
 			<Footer selected="requisitos-y-documentacion" />
 			<WhatsappLink />
-		</>
+		</div>
 	);
 }
