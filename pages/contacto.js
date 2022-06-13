@@ -25,8 +25,11 @@ export default function Contacto() {
 							<b>Para ponerte en contacto con nosotros o solicitar más información:</b>
 						</p>
 						<p>
-							Escribinos por <a href="#">Whats app</a> o dejanos tus datos y nos
-							contactaremos a la brevedad.
+							Escribinos por{" "}
+							<a href="https://wa.me/5491130488818" target="_blank" rel="noreferrer">
+								Whats app
+							</a>{" "}
+							o dejanos tus datos y nos contactaremos a la brevedad.
 						</p>
 					</div>
 					<form
