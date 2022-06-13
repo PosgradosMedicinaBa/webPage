@@ -25,11 +25,11 @@ export default function Header({children, section}) {
 				/>
 				<meta property="og:image" content="https://i.ibb.co/TcCNPTN/ogImage.jpg" />
 				<meta property="og:image:alt" content="Posgrados Medicina Buenos Aires" />
-				<meta property="og:url" content="cambiar" />
+				<meta property="og:url" content="https://posgradosmedicinaba.com.ar" />
 
 				<meta name="twitter:card" content="summary_large_image" />
 				<meta property="twitter:domain" content="weak-dodo-64.loca.lt" />
-				<meta property="twitter:url" content="cambiar" />
+				<meta property="twitter:url" content="https://posgradosmedicinaba.com.ar" />
 				<meta name="twitter:title" content="Posgrados Medicina Buenos Aires" />
 				<meta
 					name="twitter:description"
