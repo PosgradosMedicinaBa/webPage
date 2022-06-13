@@ -45,6 +45,7 @@ export default function Quienessomos() {
 							<Image
 								src={quienesSomosImage}
 								alt="Foto de medica escribiendo en una computadora"
+								priority={true}
 							/>
 						</div>
 						<div className={styles.gradient} />

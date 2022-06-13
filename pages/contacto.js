@@ -74,7 +74,7 @@ export default function Contacto() {
 				</div>
 				<div className={styles.imgContainer}>
 					<div className={styles.img}>
-						<Image src={contactImg} alt="Medico viendo el celular" />
+						<Image src={contactImg} alt="Medico viendo el celular" priority={true} />
 					</div>
 				</div>
 			</main>

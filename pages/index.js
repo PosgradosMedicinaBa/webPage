@@ -88,7 +88,7 @@ export default function Home() {
 							con nosotros!
 						</p>
 						<div className={styles.bannerImg}>
-							<Image src={bannerImg} alt="Estudiantes" />
+							<Image src={bannerImg} alt="Estudiantes" priority={true} />
 							<div className={styles.bannerGradient} />
 						</div>
 					</div>
