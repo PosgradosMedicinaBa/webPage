@@ -4,7 +4,12 @@ import styles from "./whatsappIcon.module.css";
 
 export default function WhatsappLink() {
 	return (
-		<a href="#" className={styles.whatsappLink}>
+		<a
+			href="https://wa.me/5491130488818"
+			target="_blank"
+			rel="noreferrer"
+			className={styles.whatsappLink}
+		>
 			<Image src={whatsappIcon} alt="whatsapp link" />
 		</a>
 	);
