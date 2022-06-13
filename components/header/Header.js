@@ -82,7 +82,7 @@ export default function Header({children, section}) {
 						</ul>
 					</nav>
 				</div>
-				{children}
+				{children ? children : null}
 			</header>
 		</>
 	);

@@ -6,21 +6,21 @@ import Link from "next/link";
 import styles from "../styles/especializaciones.module.css";
 import Image from "next/image";
 import searchIcon from "../public/svg/search.svg";
-import {useState} from "react/cjs/react.development";
-
-function prepareString(string) {
-	let s = string.toLowerCase();
-	s = s.replaceAll("á", "a");
-	s = s.replaceAll("é", "e");
-	s = s.replaceAll("í", "i");
-	s = s.replaceAll("ó", "o");
-	s = s.replaceAll("ú", "u");
-	return s;
-}
+import {useState} from "react";
 
 export default function Especializaciones() {
 	const [inputValue, setInputValue] = useState("");
 	const [list, setList] = useState(especializacionesList);
+
+	function prepareString(string) {
+		let s = string.toLowerCase();
+		s = s.replaceAll("á", "a");
+		s = s.replaceAll("é", "e");
+		s = s.replaceAll("í", "i");
+		s = s.replaceAll("ó", "o");
+		s = s.replaceAll("ú", "u");
+		return s;
+	}
 
 	function inputChange(value) {
 		//search
